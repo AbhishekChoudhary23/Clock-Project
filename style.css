@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.container,
+.daytime {
+    width: 100%;
+    height: 50vh;
+    background: rgb(9, 80, 113);
+    background: radial-gradient(ellipse at center, #0a2e38 0%, #000000 70%);
+    color: #fff;
+    text-align: center;
+}
+
+.container h1 {
+    font-weight: 300;
+    font-size: 30px;
+    padding-top: 50px;
+    margin: 0;
+}
+
+.font {
+    font-size: 50%;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.clock {
+    color: #fff;
+    padding: 30px 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 0 0 20px rgb(10, 175, 230, 1), 0 0 20px rgb(10, 175, 230, 0);
+}
+
+.date {
+    color: #fff;
+    padding: 30px 50px;
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 0 0 20px rgb(10, 175, 230, 1), 0 0 20px rgb(10, 175, 230, 0);
+}
+
+@media screen and (max-width: 660px) {
+    .date {
+        padding-bottom: 100px;
+    }
+
+    .font {
+        width: 204px;
+        height: 35px;
+        padding-top: 100px;
+    }
+}
